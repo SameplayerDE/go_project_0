@@ -7,6 +7,7 @@ import (
 )
 
 type CommandExecutor interface {
+	execute() (string, int)
 }
 
 type ConsoleCommand struct {
